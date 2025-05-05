@@ -3,7 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Personal Web Profile</title>
+    <meta
+      name="description"
+      content="Profil pribadi Budi Nugraha, seorang siswa dengan cita-cita menjadi Software Engineer."
+    />
+    <meta name="author" content="Budi Nugraha" />
+    <title>Profil Pribadi - Budi Nugraha</title>
 
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -20,26 +25,32 @@
     <main class="card">
       <img
         src="./images/person.avif"
-        alt="Foto Profil Hanif Fathan"
+        alt="Foto Profil Budi Nugraha"
         class="card-image"
+        width="150"
+        height="150"
       />
       <div class="card-content">
-        <h1 class="card-heading">Hanif Fathan</h1>
+        <h1 class="card-heading">Budi Nugraha</h1>
         <p><strong>Kelas:</strong> XII IPA 1</p>
         <p><strong>Jurusan:</strong> Ilmu Pengetahuan Alam</p>
         <p><strong>Hobi:</strong> Ngoding dan Desain</p>
         <p><strong>Cita-cita:</strong> Software Engineer</p>
       </div>
-      <div class="toggle-container">
-        <span>🌞</span>
+      <div class="toggle-container" aria-label="Toggle Dark Mode">
+        <span aria-hidden="true">🌞</span>
         <label class="switch">
-          <input type="checkbox" id="darkModeToggle" />
+          <input
+            type="checkbox"
+            id="darkModeToggle"
+            aria-label="Dark Mode Toggle"
+          />
           <span class="slider round"></span>
         </label>
-        <span>🌙</span>
+        <span aria-hidden="true">🌙</span>
       </div>
     </main>
 
-    <script src="./script.js"></script>
+    <script src="./script.js" defer></script>
   </body>
 </html>
